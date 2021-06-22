@@ -1,0 +1,48 @@
+:root {
+    /** colors palette **/
+
+    --white: hsl(0, 0%, 100%);
+    --bg_main: hsl(218, 28%, 13%);
+
+
+    /* fonts */
+    --f_heading: 'Raleway', sans-serif;
+    --f_body: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+/** globales **/
+body {
+    font-size: 1.4rem;
+    background-color: var(--bg_main);
+    font-family: var(--f_body);
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* navegacion */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+.logo{
+    width: 8rem;
+}
+.nav_pages {
+    display: flex;
+    gap: 2rem;
+}
+.nav_pages a {
+    font-size: 1.2rem;
+    color: var(--white);
+}
