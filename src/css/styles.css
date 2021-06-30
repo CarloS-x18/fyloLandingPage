@@ -36,6 +36,20 @@ h1, h2, h3, p {
 h1, h2, h3 {
     font-family: var(--f_heading);
 }
+h2 {
+    font-size: 1.8rem;
+}
+p {
+    font-size: 1.4rem;
+}
+@media (min-width: 1280px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+}
 
 
 /* Utilidades */
@@ -91,7 +105,7 @@ h1, h2, h3 {
 }
 .info-principal__text {
     text-align: center;
-    width: min(86%);
+    width: min(84%);
 }
 .info-principal__text h1 {
     font-size: 2.4rem;
@@ -101,7 +115,6 @@ h1, h2, h3 {
 .info-principal__text p {
     font-family: var(--f_heading);
     margin-bottom: 3rem;
-    font-size: 1.5rem;
     line-height: 1.5;
 }
 .info-principal__text button {
@@ -127,8 +140,49 @@ h1, h2, h3 {
     }
     .info-principal__text p {
         margin: 0 auto;
-        width: 60rem;
-        font-size: 2rem;
-        margin-bottom: 2.5rem;
+        width: 68rem;
+        font-size: 2.2rem;
+        margin-bottom: 4rem;
+    }
+    .info-principal__text button {
+        font-size: 1.6rem;
+        padding: 2rem 10rem;
+    }
+}
+
+/* Cards de Información */
+.cards {
+    margin: 13rem 0;
+}
+.card {
+    margin: 0 2rem 10rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+}
+.card img {
+    height: 6.5rem;
+    margin-bottom: 3rem;
+}
+.card h2{
+    margin-bottom:1rem;
+}
+@media (min-width: 1280px) {
+    .cards {
+        margin: 10rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+        gap: 8rem;
+    }
+    .card {
+        width: 72%;
+        margin: 0 auto;
+
+    }
+    .card img {
+        height: 8rem;
     }
 }
