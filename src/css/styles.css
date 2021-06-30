@@ -3,7 +3,7 @@
 
     --white: hsl(0, 0%, 100%);
     --bg_main: hsl(218, 28%, 13%);
-
+    --button: linear-gradient(to left, hsl(198, 60%, 50%) , hsl(176, 68%, 64%));
 
     /* fonts */
     --f_heading: 'Raleway', sans-serif;
@@ -28,21 +28,107 @@ a {
     color: var(--white);
     text-decoration: none;
 }
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+h1, h2, h3 {
+    font-family: var(--f_heading);
+}
+
+
+/* Utilidades */
+.m-0 {
+    margin: 0;
+}
+.p-0 {
+    padding: 0;
+}
 
 /* navegacion */
-.navegacion {
+.nav {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
 }
 .logo{
     width: 8rem;
 }
-.nav_pages {
-    display: flex;
-    gap: 2rem;
-}
-.nav_pages a {
+.nav__pages a {
     font-size: 1.2rem;
     color: var(--white);
+    padding-right: 2rem;
+    font-family: var(--f_heading);
+}
+.nav__pages a:last-of-type {
+    padding-right: 0;
+}
+@media (min-width: 1280px) {
+    .nav {
+        padding: 6rem 10rem;
+    }
+    .nav__pages a {
+        font-size: 1.8rem;
+        padding-right: 5rem;
+    }
+    .logo{
+        width: 18rem;
+    }
+}
+
+/* Contenido Principal */
+.info-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.info-principal__img {
+    width: 30rem;
+    margin-bottom: 5rem;
+}
+.info-principal__text {
+    text-align: center;
+    width: min(86%);
+}
+.info-principal__text h1 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+.info-principal__text p {
+    font-family: var(--f_heading);
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.info-principal__text button {
+    background: var(--button);
+    padding: 1.5rem 8rem;
+    font-family: var(--f_heading);
+    font-weight: 500;
+    border-radius: 3rem;
+    border: none;
+    color: var(--white);
+}
+@media (min-width: 1280px) {
+    .info-principal__img {
+        width: 70rem;
+        margin-bottom: 5rem;
+    }
+    .info-principal__text {
+        width: 100rem;
+    }
+    .info-principal__text h1 {
+        font-size: 5rem;
+        margin-bottom: 5rem;
+    }
+    .info-principal__text p {
+        margin: 0 auto;
+        width: 60rem;
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
 }
