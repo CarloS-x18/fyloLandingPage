@@ -3,6 +3,7 @@
 
     --white: hsl(0, 0%, 100%);
     --bg_main: hsl(218, 28%, 13%);
+    --bg_testimoniales: hsl(219, 30%, 18%);
     --button: linear-gradient(to left, hsl(198, 60%, 50%) , hsl(176, 68%, 64%));
     --cyan: hsl(176, 68%, 64%);
 
@@ -191,6 +192,7 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 15rem;
 }
 .secondary-info__img {
     width: 30rem;
@@ -239,9 +241,59 @@ p {
         margin-right: 8rem;
     }
     .secondary-info__text {
-        width: 50%;
+        width: 45%;
     }
     .secondary-info__text h2 {
         font-size: 4rem;
     }
+}
+
+/* Testimoniales */
+.testimoniales__quotes {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    top: -1.7rem;
+    left: 0.5rem;
+}
+.testimoniales__quotes img {
+    width: 2.2rem;
+    position: absolute;
+}
+.testimoniales__cards {
+    position: relative;
+    z-index: 2;
+}
+.testimonial {
+    margin: 0 auto;
+    padding: 2.5rem 2.2rem 2.2rem 2.2rem;
+    background-color: var(--bg_testimoniales);
+    margin-bottom: 2rem;
+    width: 80%;
+    border-radius: 0.4rem;
+}
+.testimonial:last-of-type {
+    margin-bottom: 0;
+}
+.testimonial__message {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+.testimonial__user {
+    display: flex;
+}
+.testimonial__user img {
+    height: 2.5rem;
+    border-radius: 20rem;
+    margin-right: 1.2rem;
+}
+.testimonial__user h3{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+.testimonial__user p{
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
 }
