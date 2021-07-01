@@ -232,7 +232,7 @@ p {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 0 auto 15rem auto;
         width: 80%;
         
     }
@@ -255,7 +255,7 @@ p {
     position: relative;
     z-index: 1;
     top: -1.7rem;
-    left: 0.5rem;
+    left: 0.5rem    ;
 }
 .testimoniales__quotes img {
     width: 2.2rem;
@@ -296,4 +296,40 @@ p {
 .testimonial__user p{
     font-size: 0.8rem;
     letter-spacing: 0.5px;
+}
+@media (min-width: 1280px) {
+    .testimoniales__cards {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 70%;
+        gap: 5rem;
+    }
+    .testimonial {
+        margin: 0 auto;
+        padding: 3rem;
+        width: 100%;
+    }
+    .testimoniales__quotes {
+        width: 70%;
+        top: -3rem;
+        left: -0.8rem;
+    }
+    .testimoniales__quotes img {
+        width: 5rem;
+    }
+    .testimonial__message {
+        font-size: 1.6rem;
+        margin-bottom: 3rem;
+    }
+    .testimonial__user img {
+        height: 4rem;
+        margin-right: 1.5rem;
+    }
+    .testimonial__user h3{
+        font-size: 1.4rem;
+    }
+    .testimonial__user p{
+        font-size: 1.2rem;
+       
 }
