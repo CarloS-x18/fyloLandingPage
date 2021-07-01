@@ -4,6 +4,7 @@
     --white: hsl(0, 0%, 100%);
     --bg_main: hsl(218, 28%, 13%);
     --button: linear-gradient(to left, hsl(198, 60%, 50%) , hsl(176, 68%, 64%));
+    --cyan: hsl(176, 68%, 64%);
 
     /* fonts */
     --f_heading: 'Raleway', sans-serif;
@@ -152,7 +153,7 @@ p {
 
 /* Cards de Información */
 .cards {
-    margin: 13rem 0;
+    margin: 13rem 0 15rem 0;
 }
 .card {
     margin: 0 2rem 10rem 2rem;
@@ -185,4 +186,43 @@ p {
     .card img {
         height: 8rem;
     }
+}
+
+/* Secondary Info */
+.secundary-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.secundary-info__img {
+    width: 30rem;
+    margin-bottom: 6rem;
+}
+.secundary-info__text {
+    margin: 0 auto;
+    width: 90%;
+}
+.secundary-info__text h2 {
+    margin-bottom: 2rem;
+}
+.secundary-info__text p {
+    margin-bottom: 2rem;
+}
+.secundary-info__link {
+    display: inline-block;
+}
+.secundary-info__text a {
+    display: flex;
+    align-items: center;
+    margin-right: 0.6rem;
+    border-bottom: solid 1px var(--cyan);
+    padding-bottom: 0.5rem;
+    
+}
+.secundary-info__text a p{
+    margin: 0;
+    color: var(--cyan);
+}
+.secundary-info__text a img{
+    height: 1.5rem;
 }
