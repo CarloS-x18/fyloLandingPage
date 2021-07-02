@@ -5,6 +5,7 @@
     --bg_intro: hsl(217, 28%, 15%);
     --bg_main: hsl(218, 28%, 13%);
     --bg_testimoniales: hsl(219, 30%, 18%);
+    --bg_footer: hsl(216, 53%, 9%);
     --button: linear-gradient(to left, hsl(198, 60%, 50%) , hsl(176, 68%, 64%));
     --cyan: hsl(176, 68%, 64%);
 
@@ -27,6 +28,7 @@ body {
     background-color: var(--bg_main);
     font-family: var(--f_body);
     line-height: 1.5;
+    margin: 0;
 }
 a {
     color: var(--white);
@@ -62,6 +64,9 @@ p {
 }
 .p-0 {
     padding: 0;
+}
+.fs-16 {
+    font-size: 1.6rem;
 }
 
 /* navegacion */
@@ -400,4 +405,69 @@ p {
     .formulario button {
         font-size: 1.6rem;
     }
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg_footer);
+    width: 100%;
+}
+.footer {
+    margin: 0 auto;
+    width: 85%;
+}
+.footer__logo {
+    margin-bottom: 4rem;
+}
+.footer__contacto {
+    margin-bottom: 8rem;
+}
+.contacto__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.contacto__info img {
+    width: 10;
+    padding-top: 0.5rem
+}
+.contacto__info p {
+    width: 85%;
+}
+.footer__links {
+    margin-bottom: 8rem;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.links a {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.links a:last-of-type {
+    margin-bottom: 0;
+}
+.links:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+.footer__socials a {
+    margin-right: 1rem;
+}
+.footer__socials a:last-of-type {
+    margin-right: 0;
+}
+.footer__socials a i {
+    font-size: 1.6rem;
+    border: solid 1px var(--white);
+    border-radius: 2rem;
+    padding: 0.5rem;
 }
