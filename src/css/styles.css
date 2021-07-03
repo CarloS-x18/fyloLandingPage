@@ -25,7 +25,7 @@ html {
 /** globales **/
 body {
     font-size: 1.4rem;
-    background-color: var(--bg_main);
+    background-color: var(--bg_intro);
     font-family: var(--f_body);
     line-height: 1.5;
     margin: 0;
@@ -107,14 +107,17 @@ p {
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    position: relative;
 }
 .info-principal__img {
     width: 30rem;
     margin-bottom: 5rem;
+    z-index: 3;
 }
 .info-principal__text {
     text-align: center;
     width: min(84%);
+    z-index: 3;
 }
 .info-principal__text h1 {
     font-size: 2.4rem;
@@ -159,7 +162,9 @@ p {
 
 /* Cards de Información */
 .cards {
-    margin: 13rem 0 15rem 0;
+    margin: 13rem 0 0 0;
+    background-color: var(--bg_main);
+    padding-bottom: 5rem;
 }
 .card {
     margin: 0 2rem 10rem 2rem;
@@ -198,7 +203,8 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 15rem;
+    padding-bottom: 15rem;
+    background-color: var(--bg_main);
 }
 .secondary-info__img {
     width: 30rem;
@@ -255,6 +261,9 @@ p {
 }
 
 /* Testimoniales */
+.testimoniales {
+    background-color: var(--bg_main);
+}
 .testimoniales__quotes {
     width: 80%;
     margin: 0 auto;
@@ -342,14 +351,21 @@ p {
 }
 
 /* Formulario */
+form {
+    padding: 16rem 0 10rem 0;
+    position: relative;
+}
 .formulario {
     background-color: var(--bg_intro);
-    margin: 16rem auto 10rem auto;
+    margin: 0 auto 0 auto;
     width: 90%;
     border-radius: 1rem;
     text-align: center;
     padding: 4rem 3rem;
     box-shadow: 5px 5px 10px -2px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
+    
 }
 .formulario__title {
     margin-bottom: 1.8rem; 
@@ -509,4 +525,45 @@ footer {
         border-radius: 5rem;
     }
 
+}
+
+/* Backgrounds */ 
+.bg-mb {
+    z-index: 2;
+}
+.bg-mb img {
+    position: absolute;
+    left: 0;
+    top: 20rem;
+}
+.bg-main {
+    content: '';
+    z-index: 1;
+    width: 100%;
+}
+.bg {
+    position: absolute;
+    background-color: var(--bg_main);
+    height: 65%;
+    width: 100%;
+    bottom: -13rem;
+}
+.bg-form {
+    z-index: 1;
+}
+.bg-first {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--bg_main);
+}
+.bg-second {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--bg_footer);
 }
